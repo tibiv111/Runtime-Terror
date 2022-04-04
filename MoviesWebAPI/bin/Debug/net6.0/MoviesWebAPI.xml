@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MoviesWebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:MoviesWebAPI.Controllers.UsersController.UpdateUserProfile(System.Nullable{System.Int32},MoviesWebAPI.Data.Requests.Users.UserRequest)">
+            <summary>
+            Updates user profile data
+            </summary>
+            <param name="userId"></param>
+            <param name="userRequest"></param>
+            <response code="200">Updates user profile data in database and returns it</response>
+            <response code="300">UserID wasn't given in the request's header</response>
+            <response code="301">Username wasn't given in the request's body</response>
+            <response code="302">Email wasn't given in the request's body</response>
+            <response code="303">Update method gave us an null, meaning the backend couldn't update user's profile</response>
+            <response code="400">Some error happened at backend level and returned an exception</response>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
